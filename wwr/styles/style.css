@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&family=Source+Sans+Pro&display=swap');
+
 #content{
     max-width: 1600px;
     margin: 0 auto;
@@ -10,11 +12,13 @@ main section{
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 nav a {
     text-align: center;
     color: #363d45;
     text-decoration: none;
+    padding: 35px;
 }
 nav a:hover {
     background-color: #363d45;
@@ -35,37 +39,62 @@ nav a:hover {
 }
 body {
     background-color: #fffcf7;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin: 0;
 }
 header {
     background-color: #d3e4c5;
 }
 .home-title {
+    font-family: "Rowdies", Helvetica, sans-serif;
+    font-size: 2em;
     color: #363d45;
+    margin-top: 10px;
 }
 h4 {
     color: #363d45;
 }
 .book, .join {
+    font-family: "Rowdies", Helvetica, sans-serif;
+    font-size: 18px;
     background-color: #a1b5d8;
     color: #363d45;
     text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     background-color: #363d45;
     color: #d3e4c5;
 }
 .msg {
+    line-height: 1.5em;
     background-color: #363d45;
+    padding: 35px;
 }
 .msg h2{
     color: #d3e4c5;
 }
 .msg p {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: .8em;
     color: #fffcf7;
+    padding-bottom: 15px;
 }
 footer {
     background-color: #d3e4c5;
     color: #363d45;
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+footer .social img {
+    padding-top: 15px;
 }
 footer a {
     color: #363d45;
@@ -80,4 +109,16 @@ footer p {
 }
 footer p a:hover {
     text-decoration: underline;
+}
+#logo-link {
+    padding-top: 5px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid #363d45;
+}
+main section img {
+    box-sizing: border-box;
 }
