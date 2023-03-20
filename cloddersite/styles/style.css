@@ -1,1 +1,172 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&family=Merienda:wght@900&display=swap');
+
+:root {
+    /* Color palette */
+    --navy: #094844;
+    --navy-alpha: #094844cf;
+    --white: #c6ddd6 ;
+    --pink: #e33988;
+    --yellow: #ffe59c;
+}
+
+/**/
+
+header {
+    display: grid;
+    grid-template-columns: 180px auto;
+    grid-template-rows: 100px;
+    background-color: var(--navy);
+    font-family: "Merienda", Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+.logo {
+    width: 100%;
+    height: 100%;
+    padding-left: 30px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    text-align: center;
+    color: var(--white);
+    text-decoration: none;
+    padding: 35px;
+    padding-top: 1.9em;
+}
+nav a:hover {
+    background-color: var(--pink);
+    color: var(--yellow);
+}
+
+/**/
+
+h1{
+    font-family: "Merienda", Helvetica, sans-serif;
+    font-size: 3vw;
+}
+p{
+    font-family: "Fira Sans", Helvetica, sans-serif;
+    font-size: 1.5vw;
+}
+.book-now{
+    font-family: "Merienda", Helvetica, sans-serif;
+    font-size: 1.5vw;
+    text-decoration: none;
+}
+#content{
+    background-color: var(--white);
+}
+.home-grid{
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 0;
+}
+#home-hero{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 100%;
+    position: relative;
+}
+#home-hero-img{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 100%;
+}
+#home-hero h1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: left;
+    z-index: 1;
+    position: absolute;
+    left: 2vw;
+    top: 0;
+    color: var(--white);
+    text-shadow: .2vw .2vw .8vw var(--navy), -.2vw -.2vw .8vw var(--navy);
+}
+#home-hero p{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: left;
+    z-index: 1;
+    position: absolute;
+    padding: 1em;
+    right: 2vw;
+    bottom: 2vw;
+    left: 50vw;
+    background-color: var(--navy-alpha);
+    color: var(--white);
+}
+#home-hero2{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    size: 100%;
+    position: relative;
+}
+#home-hero2-img{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 100%
+}
+#home-hero2 h1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: left;
+    z-index: 1;
+    position: absolute;
+    left: 2vw;
+    top: 0;
+    color: var(--white);
+    text-shadow: .2vw .2vw .8vw var(--navy), -.2vw -.2vw .8vw var(--navy);
+}
+#home-hero2 p{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: left;
+    z-index: 1;
+    position: absolute;
+    padding: 1em;
+    right: 2vw;
+    bottom: 2vw;
+    left: 50vw;
+    top: 29vw;
+    background-color: var(--navy-alpha);
+    color: var(--white);
+}
+#home-hero2 .book-now{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: left;
+    z-index: 1;
+    position: absolute;
+    padding: 1em;
+    right: 2.4vw;
+    bottom: 4vw;
+    top: 37.2vw;
+    background-color: var(--navy);
+    color: var(--white);
+}
+#home-hero2 .book-now:hover{
+    background-color: var(--pink);
+    color: var(--yellow);
+}
+
+/**/
+
+footer {
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 25px 50px;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer .social img {
+    padding-top: 15px;
+}
+footer p{
+    font-size: 1.2em;
+}
