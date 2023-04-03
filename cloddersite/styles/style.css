@@ -269,6 +269,144 @@ p{
     padding-right: 4vw;
 }
 
+/* ACTIVITIES */
+
+.activities-grid{
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 1.5vw;
+}
+#activities-hero{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 100%;
+    position: relative;
+}
+#activities-hero-img{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 100%;
+}
+#activities-hero h1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: left;
+    z-index: 1;
+    position: absolute;
+    left: 2vw;
+    top: 0;
+    color: var(--white);
+    text-shadow: .2vw .2vw .8vw var(--navy), -.2vw -.2vw .8vw var(--navy);
+}
+#activities-hero p{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: left;
+    z-index: 1;
+    position: absolute;
+    padding: 1em;
+    right: 2vw;
+    bottom: 2vw;
+    left: 50vw;
+    background-color: var(--navy-alpha);
+    color: var(--white);
+}
+#activity1{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: var(--navy);
+    color: var(--white);
+    position: relative;
+    height: 20vw;
+    padding-top: 1vw;
+}
+#activity1 img{
+    z-index: 1;
+    position: absolute;
+    height: 90%;
+    padding: 1vw;
+    bottom: .2vw;
+    left: 2vw;
+}
+#activity1 h2, #activity1 p{
+    padding-left: 28vw;
+    padding-right: 4vw;
+}
+#activity2{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-color: var(--navy);
+    color: var(--white);
+    position: relative;
+    height: 20vw;
+    padding-top: 1vw;
+}
+#activity2 img{
+    z-index: 1;
+    position: absolute;
+    height: 90%;
+    padding: 1vw;
+    bottom: .2vw;
+    right: 2vw;
+}
+#activity2 h2, #activity2 p{
+    padding-left: 4vw;
+    padding-right: 29vw;
+}
+#activities-hero2{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    width: 100%;
+    position: relative;
+}
+#activities-hero2-img{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    width: 100%
+}
+#activities-hero2 h1{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    text-align: left;
+    z-index: 1;
+    position: absolute;
+    left: 2vw;
+    top: 0;
+    color: var(--white);
+    text-shadow: .2vw .2vw .8vw var(--navy), -.2vw -.2vw .8vw var(--navy);
+}
+#activities-hero2 p{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    text-align: left;
+    z-index: 1;
+    position: absolute;
+    padding: 1em;
+    right: 2vw;
+    bottom: 2vw;
+    left: 50vw;
+    top: 19vw;
+    background-color: var(--navy-alpha);
+    color: var(--white);
+}
+#activities-hero2 .book-now{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    text-align: left;
+    z-index: 1;
+    position: absolute;
+    padding: 1em;
+    right: 2.4vw;
+    bottom: 4vw;
+    top: 31.2vw;
+    background-color: var(--navy);
+    color: var(--white);
+}
+#activities-hero2 .book-now:hover{
+    background-color: var(--pink);
+    color: var(--yellow);
+}
 /* FOOTER */
 
 footer {
