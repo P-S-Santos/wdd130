@@ -407,6 +407,7 @@ p{
     background-color: var(--pink);
     color: var(--yellow);
 }
+
 /* FOOTER */
 
 footer {
@@ -423,4 +424,128 @@ footer .social img {
 }
 footer p{
     font-size: 1.2em;
+}
+
+/* SMALLER SCREEN */
+
+@media screen and (max-width: 900px) {
+    .home-grid, .history-grid, .activities-grid {
+        display: grid;
+        height: auto;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        position: relative;
+    }
+    header{
+        height: 100px;
+    }
+    .logo{
+        padding-left: 0;
+    }
+    nav, footer {
+        flex-direction: column;
+        font-size: .7em;
+    }
+    nav a {
+        display: block;
+        padding: 5px 0;
+        font-size: 1em;
+    }
+    h1{
+        font-size: 5vw;
+    }
+    h2{
+        font-size: 3vw;
+    }
+    #home-hero h1{
+        left: 3%;
+    }
+    #home-hero2 h1{
+        left: 24%;
+    }
+   
+    #history-hero h1{
+        left: 40%;
+    }
+    #history1, #history2, #history3 {
+        height: 55vw;
+    }
+    #history1 img{
+        position: absolute;
+        height: 100%;
+        bottom: 0;
+        left: -1vw;
+        top: -1vw;
+        opacity: 0.15;
+    }
+    #history2 img{
+        position: absolute;
+        height: 100%;
+        bottom: 0;
+        right: -1vw;
+        top: -1vw;
+        opacity: 0.15;
+    }
+    #history3 img{
+        position: absolute;
+        height: 100%;
+        bottom: 0;
+        left: -1vw;
+        top: -1vw;
+        opacity: 0.15;
+    }
+    #activity1, #activity2{
+        height: 35vw;
+    }
+    #activity1 img{
+        position: absolute;
+        height: 100%;
+        bottom: 0;
+        left: -1vw;
+        top: -1vw;
+        opacity: 0.2;
+    }
+    #activity2 img{
+        position: absolute;
+        height: 100%;
+        bottom: 0;
+        right: -1vw;
+        top: -1vw;
+        opacity: 0.15;
+    }
+    #activities-hero h1{
+        left: 38%;
+    }
+    #activities-hero2 h1{
+        left: 24%;
+    }
+    #activities-hero2 p{
+        top: 16vw;
+    }
+    p{
+        font-size: 3vw;
+    }
+    #home-hero p, #home-hero2 p, #history-hero p, #activities-hero p, #activities-hero2 p{
+        left: 5%;
+        right: 5%;
+        text-align: center;
+    }
+
+    .book-now{
+        text-align: center;
+        position: absolute; 
+        left: 0; 
+        right: 0; 
+        margin-top: 3.6vw;
+        margin-bottom: 3vw;
+        margin-left: auto; 
+        margin-right: auto; 
+        width: 16.5vw;
+        font-size: 3vw;
+    }
+    #activities-hero2 .book-now{
+        margin-bottom: 2.4vw;
+        margin-top: 5.5vw;
+        top: 28vw;
+    }
 }
